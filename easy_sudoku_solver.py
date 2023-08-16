@@ -80,7 +80,6 @@ def check_number(sudoku, number, zero_row, zero_col):
 
 def solve(sudoku):
     while zeros_exist(sudoku):
-        print("zeros exist")
         for row in range(9):
             for col in range(9):
                 if is_zero(sudoku, row, col):
