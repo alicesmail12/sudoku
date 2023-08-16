@@ -97,7 +97,6 @@ def solve(sudoku):
                         sudoku[row][col] = 0
     else:
         print("Sudoku finished")
-        return False
 
 
 # Import csv and run solve() function
