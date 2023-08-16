@@ -1,9 +1,6 @@
-import os
 import pandas as pd
 
-os.chdir("/Users/alicesmail/Desktop")
-
-
+# Functions
 def zeros_exist(sudoku):
     for row in range(9):
         for col in range(9):
@@ -104,7 +101,8 @@ def solve(sudoku):
         return False
 
 
-sudoku_to_solve = pd.read_csv("easy_sudoku_2.csv", header=None)
+# Import csv and run solve() function
+sudoku_to_solve = pd.read_csv("easy_sudoku_1.csv", header=None)
 solve(sudoku_to_solve)
 
 
